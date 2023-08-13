@@ -1,0 +1,200 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(fon.avif);
+    background-size: cover;
+    font-size: 24px;
+
+}
+
+
+.wrapper {
+    backdrop-filter: blur(10px);
+    border: 5px solid Silver;
+    border-radius: 10px;
+    width: 400px;
+    margin-top: 100px;
+    transition: width .4s linear;
+    box-shadow: 0 0 5px purple;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow .5s linear;
+    
+    
+}
+
+.wrapper:hover {
+    box-shadow: 0 0 20px rgb(240, 33, 240);
+    transition: box-shadow .5s linear;
+}
+
+.passw {
+    margin-bottom: 30px;
+    margin-left: 75px;
+}
+
+.e-mail {
+    margin-bottom: 5px;
+    margin-left: 75px;
+
+}
+
+#em {
+    font-size: 20px;
+    color: black;
+    border: none;
+    background: none;
+    text-decoration: underline black;
+
+}
+
+
+#em:focus {
+    text-decoration: none;
+}
+
+#em:hover {
+    text-decoration: none;
+}
+
+#pa {
+    font-size: 20px;
+    color: black;
+    border: none;
+    background: none;
+    text-decoration: underline;
+}
+
+#pa:focus {
+    text-decoration: none;
+}
+
+#pa:hover {
+    text-decoration: none;
+}
+
+.send {
+    margin-left: 155px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.send-btn {
+    border: 3px solid silver;
+    margin-bottom: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: medium;
+    transition: all .1s linear;
+    font-weight: 525;
+}
+
+.send-btn:hover {
+
+    background-color: white;
+    border-color: rgb(110, 110, 110);
+    transition: .2s linear;
+}
+
+.sel {
+    display: inline;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    opacity: .5;
+    transition: opacity .4s linear;
+    
+}
+
+.sel:hover {
+    opacity: 1;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+#slct {
+    border: 2px solid silver;
+    background: none;
+    transition: all .1s linear;
+    border-radius: 5px;
+
+}
+
+#slct:hover {
+    border-color: rgb(121, 121, 121);
+    cursor: pointer;
+    transition: .2s linear;
+    
+}
+
+#slct:focus {
+    border-color: silver;
+}
+
+.reg_or_log {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+
+}
+
+.registrlog {
+    text-decoration: none;
+    transition: all .4s linear;
+    color: rgb(68, 3, 68);
+    transform: translateY(0);
+    transition: all .4s linear;
+}
+
+.registrlog:hover {
+    text-decoration: underline;
+    color: rgb(188, 142, 231);
+    transform: translateY(-3px);
+    transition: .4s linear;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+#home {
+    transform: translateY(0);
+    transition: all .2s linear;
+}
+
+#home:hover {
+    transform: translateY(-5px);
+    transition: all .2s linear;
+}
+
+#contact {
+    transform: translateY(0);
+    transition: all .2s linear;
+}
+
+#contact:hover {
+    transform: translateY(-5px);
+    transition: all .2s linear;
+}
+
+
+.show{
+    display: block;
+    animation: show .5s linear;
+}
+
+.hide {
+    display: none;
+}
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
