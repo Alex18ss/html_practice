@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomGenerator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .clicker {
+        margin-bottom: 50px;
+        border: 3px solid black;
+        width: 100px;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        background-color: rgb(156, 215, 233);
+    }
+
+    .rand-gen {
+        position: relative;
+        border: 3px solid black;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        border-radius: 15px;
+    }
+
+    .rand-gen p:nth-child(1) {
+        background-color: lightskyblue;
+        margin: 0;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        border-top-left-radius: 11px;
+        border-top-right-radius: 11px;
+    }
+
+    .rand-gen label {
+        position: absolute;
+        left: 8%;
+
+    }
+
+    .rand-gen input {
+        margin-bottom: 15px;
+    }
+
+    .result {
+        max-width: 200px;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+
+    .res-con {
+        display: flex;
+        justify-content: center;
+    }
+
+.generate {
+    border-radius: 10px;
+}
+</style>
+
+<body>
+    <div class="clicker">
+        <p class="counter">0</p>
+        <button class="add">add</button>
+        <button class="remove">sub</button>
+    </div>
+    <div class="rand-gen">
+        <p>True Random Number<br>Generator</p>
+        <div class="inputs">
+            <input type="number" id="min" value="1" class="min">
+            <label for="min">Min:</label>
+            <br>
+            <input type="number" id="max" aria-valuetext="10" value="10"  class="max">
+            <label for="max">Max:</label>
+            <br>
+            <button class="generate">Generate</button>
+            <div class="res-con">
+                <h5>Result</h5>
+                <p class="result">0</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let number = document.querySelector('.counter')
+    let btn_add = document.querySelector('.add')
+    let btn_rem = document.querySelector('.remove')
+
+    function choise(type) {
+        let p = +number.textContent
+        p += type
+        number.textContent = String(p)
+    }
+
+    btn_add.onclick = function () {
+        choise(1)
+    }
+    btn_rem.onclick = function () {
+        choise(-1)
+    }
+
+    let min = document.querySelector('.min')
+    let max = document.querySelector('.max')
+    let gen_btn = document.querySelector('.generate')
+    let result = document.querySelector('.result')
+
+    function getRandomArbitrary(min, max) {
+        return Number(Math.random() * (max - min) + min);
+    }
+
+    // let int_max = +max.value
+    
+
+    gen_btn.onclick = function() {
+        let int_max = +max.value
+        let int_min = +min.value
+        if (int_min >= int_max) {
+            alert('Max should be more than min!')
+        }
+        if (int_min < int_max) {
+            let rannum = getRandomArbitrary(int_min, int_max+1)
+            result.textContent = parseInt(rannum)
+        }
+    }
+</script>
+
+</html>
