@@ -1,0 +1,52 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    transition: background-color .01s;
+}
+
+.text {
+    color: black;
+    font-size: 16px;
+    transition: color .05s;
+    transition: font-size .5s;
+}
+
+.inputs {
+    display: flex;
+    background-color: rgb(168, 164, 164);
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+}
+
+.inputs label {
+    display: block;
+}
+
+.inputs div {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.inputs input{
+    max-width: 25px;
+}
+
+#forTextSize {
+    max-width: 45px;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#forText , #forBody {
+    border: none;
+    max-height: 25px;
+    background-color: transparent;
+}
