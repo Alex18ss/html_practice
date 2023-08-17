@@ -18,4 +18,4 @@ https://alex18ss.github.io/html_practice/generator
 
 https://alex18ss.github.io/html_practice/calculator/
 
-<h3><b>Please, use a computer to view pages only</b></h3>
+<h3><b>Please, use only a computer to view pages</b></h3>
