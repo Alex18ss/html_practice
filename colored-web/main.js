@@ -29,13 +29,5 @@ forBody.onchange = function () {
 }
 
 forTextSize.onchange = function () {
-    if (+forTextSize.value > 172 || +forTextSize.value < 10){
-        forTextSize.style.fontSize = '16px'
-        forTextSize.value = 16
-        localStorage.setItem('txtSize', forTextSize.value)
-    }
-    else {
-        localStorage.setItem('txtSize', forTextSize.value)
-    }
-    
+    localStorage.setItem('txtSize', forTextSize.value)
 }
