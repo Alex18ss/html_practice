@@ -7,6 +7,7 @@ https://alex18ss.github.io/html_practice/colored-web/
 
 # Generator
 https://alex18ss.github.io/html_practice/generator
+![Alt text](image.png)
 
 # Calculator
 https://alex18ss.github.io/html_practice/calculator/
