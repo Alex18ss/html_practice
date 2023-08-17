@@ -16,14 +16,8 @@ forBody.oninput = function () {
 }
 
 forTextSize.oninput = function () {
-    if (+forTextSize.value > 172 || +forTextSize.value < 10){
-        forTextSize.style.fontSize = '16px'
-        forTextSize.value = '16'
 
-    }
-    else {
-        text.style.fontSize = forTextSize.value + 'px'
-    }
+    text.style.fontSize = forTextSize.value + 'px'
 }
 
 forText.onchange = function () {
@@ -35,13 +29,13 @@ forBody.onchange = function () {
 }
 
 forTextSize.onchange = function () {
-    // if (+forTextSize.value > 172 || +forTextSize.value < 10){
-    //     forTextSize.style.fontSize = '16px'
-    //     forTextSize.value = 16
-
-    // }
-    // else {
-    //     return;
-    // }
-    localStorage.setItem('txtSize', forTextSize.value)
+    if (+forTextSize.value > 172 || +forTextSize.value < 10){
+        forTextSize.style.fontSize = '16px'
+        forTextSize.value = 16
+        localStorage.setItem('txtSize', forTextSize.value)
+    }
+    else {
+        localStorage.setItem('txtSize', forTextSize.value)
+    }
+    
 }
