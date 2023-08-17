@@ -17,7 +17,7 @@ forBody.oninput = function () {
 
 forTextSize.oninput = function () {
     if (+forTextSize.value > 172) {
-        
+        forTextSize.value = '172px'
     }
     else if (+forTextSize.value < 10){
         forTextSize.value = '10px'
