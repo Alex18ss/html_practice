@@ -16,17 +16,7 @@ forBody.oninput = function () {
 }
 
 forTextSize.oninput = function () {
-    if (+forTextSize.value > 172) {
-        forTextSize.value = '172px'
-    }
-    else if (+forTextSize.value < 10){
-        forTextSize.value = '10px'
-    }
-    else {
-        text.style.fontSize = forTextSize.value + 'px'
-    }
-
-    
+    text.style.fontSize = forTextSize.value + 'px'
 }
 
 forText.onchange = function () {
@@ -38,5 +28,11 @@ forBody.onchange = function () {
 }
 
 forTextSize.onchange = function () {
+    if (+forTextSize.value > 172) {
+        forTextSize.value = '172px'
+    }
+    else if (+forTextSize.value < 10){
+        forTextSize.value = '10px'
+    }
     localStorage.setItem('txtSize', forTextSize.value)
 }
