@@ -6,8 +6,16 @@ https://alex18ss.github.io/html_practice/colored-web/
 
 
 # Generator
-https://alex18ss.github.io/html_practice/generator
-![Alt text](image.png)
+
+![Alt text](image.png) <br>
+
+https://alex18ss.github.io/html_practice/generator 
+
 
 # Calculator
+
+![Alt text](image-1.png) <br>
+
 https://alex18ss.github.io/html_practice/calculator/
+
+<h3><b>Please, use a computer to view pages only</b></h3>
