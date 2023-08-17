@@ -7,3 +7,6 @@ https://alex18ss.github.io/html_practice/colored-web/
 
 # Generator
 https://alex18ss.github.io/html_practice/generator
+
+# Calculator
+https://alex18ss.github.io/html_practice/calculator/

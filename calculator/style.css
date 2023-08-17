@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.result {
+    border-top: 5px solid rgb(9, 24, 34);
+    border-bottom: 5px solid rgb(9, 24, 34);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px 0;
+    color: white;
+    text-align: end;
+    font-size: 60px;
+    background-color: rgb(18, 46, 65);
+    padding: 20px 0;
+}
+
+.wrapper {
+    border: 3px solid black;
+    border-radius: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(49, 48, 68);
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+.btn {
+    border: 7px solid black;
+    border-radius: 150px;
+    margin: 20px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    background-color: rgb(179, 245, 240);
+    transition: background-color .05s ease-in-out;
+}
+
+
+.btn:active {
+    background-color: rgb(150, 212, 208);
+}
+
+.zero {
+    padding-right: 172px;
+}
+
+.dot {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.procent {
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.ac {
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+
