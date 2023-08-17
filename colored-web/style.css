@@ -35,7 +35,7 @@ body {
     margin-left: 10px;
 }
 
-.inputs input{
+.inputs input {
     max-width: 25px;
 }
 
@@ -46,7 +46,8 @@ body {
     padding: 3px;
 }
 
-#forText , #forBody {
+#forText,
+#forBody {
     border: none;
     max-height: 25px;
     background-color: transparent;
