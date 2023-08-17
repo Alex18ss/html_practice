@@ -17,9 +17,15 @@ forBody.oninput = function () {
 
 forTextSize.oninput = function () {
     if (+forTextSize.value > 172) {
-        return
+        
     }
-    text.style.fontSize = forTextSize.value + 'px'
+    else if (+forTextSize.value < 10){
+        forTextSize.value = '10px'
+    }
+    else {
+        text.style.fontSize = forTextSize.value + 'px'
+    }
+
     
 }
 
