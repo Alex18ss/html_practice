@@ -19,3 +19,9 @@ https://alex18ss.github.io/html_practice/generator
 https://alex18ss.github.io/html_practice/calculator/
 
 <h3><b>Please, use only a computer to view pages</b></h3>
+
+# Regitration and Sign in pages
+
+![Alt text](image-2.png) <br>
+
+https://alex18ss.github.io/html_practice/lg_reg/
