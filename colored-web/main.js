@@ -17,6 +17,9 @@ forBody.oninput = function () {
 
 forTextSize.oninput = function () {
     text.style.fontSize = forTextSize.value + 'px'
+    if (+forTextSize.value > 172) {
+        return
+    }
 }
 
 forText.onchange = function () {
